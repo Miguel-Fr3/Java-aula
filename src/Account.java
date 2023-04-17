@@ -2,9 +2,6 @@ public class Account {
     private String numero;
     private double saldo;
 
-    public String getNumero() {
-        return numero;
-    }
 
     public Account(String numero, double saldo) {
         this.numero = numero;
@@ -15,7 +12,9 @@ public class Account {
         } else
             this.saldo = saldo;
     }
-
+    public String getNumero() {
+        return numero;
+    }
 
     public void setNumero(String numero) {
         this.numero = numero;
