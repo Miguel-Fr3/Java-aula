@@ -25,10 +25,14 @@ public class Account {
     }
 
     public void setSaldo(double saldo) {
-        if (this.saldo + saldo < 0) {
-            System.out.println("Saldo insuficiente.");
-            this.saldo = this.saldo;
-        } else
-            this.saldo = saldo;
+        validarSaldo(saldo);
     }
+
+    private void validarSaldo(double saldo){
+        if (this.saldo + saldo < 0) {
+        System.out.println("Saldo insuficiente.");
+        this.saldo = this.saldo;
+    } else
+            this.saldo = saldo;
+}
 }
