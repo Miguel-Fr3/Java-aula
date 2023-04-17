@@ -4,9 +4,9 @@ public class Main {
         NovoBanco.nome = "Itaú Paulista";
 
 
-        var NovaConta = new Account();
-        NovaConta.setNumero("0001");
-        NovaConta.setSaldo(0.0);
+        var NovaConta = new Account("0001",-50.0);
+
+        System.out.println(NovaConta.getSaldo());
     }
 
 

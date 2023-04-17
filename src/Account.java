@@ -6,6 +6,17 @@ public class Account {
         return numero;
     }
 
+    public Account(String numero, double saldo) {
+        this.numero = numero;
+        if (this.saldo + saldo < 0) {
+            System.out.println("Saldo inicial errado.");
+            this.saldo = this.saldo;
+
+        } else
+            this.saldo = saldo;
+    }
+
+
     public void setNumero(String numero) {
         this.numero = numero;
     }
@@ -18,8 +29,7 @@ public class Account {
         if (this.saldo + saldo < 0) {
             System.out.println("Saldo insuficiente.");
             this.saldo = this.saldo;
-        }
-        this.saldo = saldo;
+        } else
+            this.saldo = saldo;
     }
-
 }
