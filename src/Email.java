@@ -57,8 +57,8 @@ public class Email {
         Remetente = remetente;
         ValidarEmail(Remetente);
     }
-    private void ValidarEmail(String Email) {
-        if (!Email.contains("@")) ;
+    private void ValidarEmail(String email) {
+        if (!email.contains("@")) ;
         System.out.println("Email invalido!");
     }
 }
