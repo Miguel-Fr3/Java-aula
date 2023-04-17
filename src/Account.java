@@ -5,12 +5,11 @@ public class Account {
 
     public Account(String numero, double saldo) {
         this.numero = numero;
-        if (this.saldo + saldo < 0) {
-            System.out.println("Saldo inicial errado.");
-            this.saldo = this.saldo;
+        validarSaldo(saldo);
+    }
 
-        } else
-            this.saldo = saldo;
+    public Account(){
+
     }
     public String getNumero() {
         return numero;
